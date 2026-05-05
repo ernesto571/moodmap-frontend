@@ -128,7 +128,7 @@ export default function DashboardPage () {
                             </span>
                         </span>
                         {/* todo */}
-                        <section className="grid lg:grid-cols-3 sticky gap-6 mt-8" >
+                        <section className="grid grid-cols-1 lg:grid-cols-3 sticky gap-6 mt-8" >
                             { todayEntry ? <TodayEntryCard entry={todayEntry}/>  : (
                                 <div className="lg:col-span-2 dark-dim border bord rounded-xl">
                                     {/* heading */}
