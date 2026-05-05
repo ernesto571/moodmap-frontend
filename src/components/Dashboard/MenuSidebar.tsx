@@ -1,5 +1,5 @@
-import { useClerk } from "@clerk/clerk-react";
-import { Calendar, LayoutDashboard, Pencil,  User } from "lucide-react"
+import { SignOutButton, useClerk } from "@clerk/clerk-react";
+import { Calendar, DoorOpen, LayoutDashboard, Pencil,  User } from "lucide-react"
 import { NavLink } from "react-router-dom"
 import { useEntryStore } from "../../store/EntryStore";
 import { useAuthStore } from "../../store/AuthStore";
@@ -91,6 +91,12 @@ export default function MenuSidebar ({ isOpen, onClose }: SidebarProps){
                         <User size={15} className="text-[#a1a1aa]" />
                         <p>Profile</p>
                     </button>
+                    <SignOutButton>
+                        <button onClick={() => openUserProfile()} className="group flex items-center gap-3 mt-1 w-full py-2 px-3 text-[0.85rem] transition-colors hover:bg-[#221416] gray rounded-lg">
+                            <DoorOpen size={15} className="text-[#a1a1aa] transition-colors group-hover:text-[#ef4444]" />
+                            <p className="transition-colors group-hover:text-[#ef4444]">Logout</p>
+                        </button>
+                    </SignOutButton>
                 </div>
                 <div className="flex flex-col border-t bord pt-3 pb-6 mx-6 font-inter">
                     <div className="yellow py-3 px-4 w-full rounded-xl">
