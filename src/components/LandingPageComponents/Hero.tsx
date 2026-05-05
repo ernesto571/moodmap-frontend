@@ -31,7 +31,7 @@ export default function Hero() {
                         </button>
                     </SignUpButton>
 
-                    <a href="#how-it-works" className="bg-[#1a1a1e] white px-7 py-3 rounded-xl font-semibold hover:translate-y-[1px] transform ease-in-out border border-[#27272a] "> See how it works</a>
+                    <a href="#how" className="bg-[#1a1a1e] white px-7 py-3 rounded-xl font-semibold hover:translate-y-[1px] transform ease-in-out border border-[#27272a] "> See how it works</a>
                 </span>
 
                 {/* info */}
