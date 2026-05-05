@@ -18,13 +18,6 @@ const getScoreColor = (score: number | undefined) => {
     return "#22c55e";
 };
 
-const getScoreDot = (score: number | undefined) => {
-    if (!score) return null;
-    if (score < 5) return "bg-red-800";
-    if (score < 7) return "bg-amber-400";
-    return "bg-green-500";
-};
-
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 export default function MoodCalendar({ entries }: Props) {

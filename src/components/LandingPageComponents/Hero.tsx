@@ -1,4 +1,4 @@
-import { SignInButton, SignUpButton } from "@clerk/clerk-react";
+import { SignUpButton } from "@clerk/clerk-react";
 import { ChevronRight } from "lucide-react";
 import { info } from "../../constants";
 
