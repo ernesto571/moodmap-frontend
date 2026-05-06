@@ -20,14 +20,14 @@ const mood = "border bord py-2 text-xs text-gray-500 rounded-md flex justify-cen
 export default function Features (){
 
     return(
-        <section id="features">
+        <section id="features" className="w-full" >
             <main className="sect-w mt-[7rem] ">
                 <p className="sect-title ">FEATURES</p>
                 <h1 className="sect-head">Everything you need to understand yourself.</h1>
                 <p className="sect-p">Built around one idea — small daily inputs lead to deep long-term clarity.</p>
 
                 {/* grid */}
-                <section className="grid md:grid-cols-3 rounded-2xl md:border bord font-inter mt-8">
+                <section className="grid grid-cols-1 md:grid-cols-3 rounded-2xl md:border bord font-inter mt-8">
                     {/* first */}
                     <div className="p-5 lg:p-7 bg-[#111113] rounded-t-2xl md:rounded-tl-2xl md:rounded-tr-none md:col-span-2 border md:border-r md:border-b md:border-t-0 bord  hover:bg-[#151517] transition ease-in-out">
                         {/* icon */}

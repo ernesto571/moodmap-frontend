@@ -7,14 +7,14 @@ import Reviews from "../components/LandingPageComponents/Review";
 
 export default function LamndingPage() {
   return (
-    <main className="grid-bg min-h-screen flex flex-col">
+    <section className="grid-bg flex flex-col overflow-x-hidden">
       <Hero />
       <Features />
       <HowItWorks />
       <Reviews />
       <CTA />
       <Footer />
-    </main>
+    </section>
   );
 }
 

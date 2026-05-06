@@ -8,12 +8,12 @@ const reviews =[
 export default function Reviews (){
 
     return(
-        <section id="reviews">
+        <section id="reviews" className="w-full" >
             <main className="sect-w mt-[7rem] ">
                 <p className="sect-title">WHAT PEOPLE SAY</p>
                 <h1 className="sect-head">Real people. Real patterns found.</h1>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-7">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-7">
                     { reviews.map( (r) => (
                         <div key={r.job} className="bg-[#111113] gray rounded-xl text-[0.83rem] border bord hover:border-gray-400 p-6 font-inter">
                             <p className="text-[#fbbf24]  ">★★★★★</p>

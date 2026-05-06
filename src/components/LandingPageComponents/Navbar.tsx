@@ -6,7 +6,7 @@ export default function Navbar(){
 
 
     return(
-        <nav className={`fixed top-0 left-0 py-2 px-4 lg:px-8  md:py-3  w-screen z-10 transition-all duration-300 black  border-b border-[#27272a] 
+        <div className={`fixed top-0 left-0 py-2 px-4 lg:px-8 w-full  md:py-3 z-10 transition-all duration-300 black  border-b border-[#27272a] 
         `}>
             <section  className="flex justify-between mx-auto items-center">
                 
@@ -39,6 +39,6 @@ export default function Navbar(){
                 </div>
                 
             </section>
-        </nav>
+        </div>
     )
 }

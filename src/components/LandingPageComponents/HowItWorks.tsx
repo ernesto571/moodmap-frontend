@@ -9,13 +9,13 @@ const how = [
 export default function HowItWorks (){
 
     return(
-        <section id="how" className="mt-[5rem] bg-[#111113] bg-opacity-70 border bord">
+        <section id="how" className="mt-[5rem] w-full bg-[#111113] bg-opacity-70 border bord">
             <main className="sect-w py-[4rem]">
                 <p className="sect-title">HOW IT WORKS</p>
                 <h1 className="sect-head">Simple by design.</h1>
                 <p className="sect-p">Four steps. Three minutes a day. Real insight over time.</p>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 md:border border-x bord rounded-2xl mt-7">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:border border-x bord rounded-2xl mt-7">
                 { how.slice(0,1).map( (h) => (
                         <div key={h.id} className="px-6 py-7 border-t md:border-t-0 md:border-r md:border-b lg:border-r bord font-grotesque hover:border-[#22c55e] hover:border-t-2 hover:border-r-[#27272a] hover:bg-[#151517] transition ease-in-out rounded-t-2xl md:rounded-tr-none lg:rounded-tl-2xl">
                             <h1 className="text-dim text-[2.5rem] font-bold">{h.id} </h1>
