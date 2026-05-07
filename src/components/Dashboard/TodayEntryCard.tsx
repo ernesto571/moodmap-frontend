@@ -59,7 +59,7 @@ export default function TodayEntryCard({ entry }: { entry: Entry }) {
                     </p>
                 </div>
 
-                <p className="text-xs text-dim text-center">You can edit your note until midnight</p>
+                <p className="text-xs text-dim text-center">You can edit your note until Sunday</p>
             </div>
         </div>
     )

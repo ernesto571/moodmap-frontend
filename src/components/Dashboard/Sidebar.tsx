@@ -65,7 +65,7 @@ export default function Sidebar() {
                         <h3 className="white font-bold text-[1.5rem] leading-[1.5rem] mt-1">{streakMessage}</h3>
                         <p className="text-[0.7rem] gray-2 mt-1">Keep it going</p>
                     </div>
-                    <div onClick={() => openUserProfile()} className="inline-flex gap-3 px-3 py-2 w-full items-center mt-4 rounded-xl hover:bg-[#1a1a1e] hover:cursor-pointer min-w-0">
+                    <div onClick={() => openUserProfile()} className="inline-flex gap-3 md:px-1 lg:px-3 py-2 w-full items-center mt-4 rounded-xl hover:bg-[#1a1a1e] hover:cursor-pointer min-w-0">
                         <button className="py-1.5 px-2 border border-green-500/30 rounded-lg text-sm green bg-green-500/10 flex-shrink-0">
                             {initials}
                         </button>

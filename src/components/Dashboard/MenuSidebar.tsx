@@ -72,8 +72,8 @@ export default function MenuSidebar ({ isOpen, onClose }: SidebarProps){
             {/* sidebar */}
             <div className={`fixed top-0 left-0 z-50 h-screen w-[50%] flex flex-col justify-between dark-dim shadow-2xl transform transition-transform duration-300 ease-in-out ${
                 isOpen ? "translate-x-0" : "-translate-x-full"}`}>
-                <div className="mx-4 mt-[1rem]  h-screen">
-                    <h3 className="text-[0.7rem] pt-[2rem] text-dim ml-3 font-inter tracking-widest">MAIN</h3>
+                <div className="mx-2 mt-[1rem]  h-screen">
+                    <h3 className="text-[0.7rem] pt-[2rem] text-dim font-inter tracking-widest">MAIN</h3>
                     <div className="mt-2">
                         {sidebarLinks.map((s) => (
                             <NavLink to={s.to} end={s.end} key={s.id} className={({ isActive }: { isActive: boolean }) => `flex items-center gap-3 mt-1 w-full py-2 px-3 text-[0.85rem] rounded-lg ${isActive ? "green green-dim" : "gray hover:bg-[#1a1a1e] hover:text-[#fafafa]"}`}>
@@ -86,7 +86,7 @@ export default function MenuSidebar ({ isOpen, onClose }: SidebarProps){
                             </NavLink>
                         ))}
                     </div>
-                    <h3 className="text-[0.7rem] text-dim ml-3 mt-3 font-inter tracking-widest">ACCOUNT</h3>
+                    <h3 className="text-[0.7rem] text-dim mt-3 font-inter tracking-widest">ACCOUNT</h3>
                     <button onClick={() => openUserProfile()} className="flex items-center gap-3 mt-1 w-full py-2 px-3 text-[0.85rem] hover:text-[#fafafa] hover:bg-[#1a1a1e] gray rounded-lg">
                         <User size={15} className="text-[#a1a1aa]" />
                         <p>Profile</p>
@@ -98,13 +98,13 @@ export default function MenuSidebar ({ isOpen, onClose }: SidebarProps){
                         </button>
                     </SignOutButton>
                 </div>
-                <div className="flex flex-col border-t bord pt-3 pb-6 mx-6 font-inter">
+                <div className="flex flex-col border-t bord pt-3 pb-6 mx-2 font-inter">
                     <div className="yellow py-3 px-4 w-full rounded-xl">
                         <p className="text-sm">Current Streak</p>
                         <h3 className="white font-bold text-[1.5rem] leading-[1.5rem] mt-1">{streakMessage}</h3>
                         <p className="text-[0.7rem] gray-2 mt-1">Keep it going</p>
                     </div>
-                    <div onClick={() => openUserProfile()} className="inline-flex gap-3 px-3 py-2 w-full items-center mt-4 rounded-xl hover:bg-[#1a1a1e] hover:cursor-pointer min-w-0">
+                    <div onClick={() => openUserProfile()} className="inline-flex gap-3 px-1 py-2 w-full items-center mt-4 rounded-xl hover:bg-[#1a1a1e] hover:cursor-pointer min-w-0">
                         <button className="py-1.5 px-2 border border-green-500/30 rounded-lg text-sm green bg-green-500/10 flex-shrink-0">
                             {initials}
                         </button>
